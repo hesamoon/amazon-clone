@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className='footer'>
       <div className='footer__container'>
-        <div className='footer__contents'>
+        <div id='fc1' className='footer__contents'>
           <h4>Get to Know Us</h4>
           <div className='footer__accessibility'>
             <p>Careers</p>
@@ -14,7 +14,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className='footer__contents'>
+        <div id='fc2' className='footer__contents'>
           <h4>Make Money with Us</h4>
           <div className='footer__accessibility'>
             <p>Sell products on Amazon</p>
@@ -26,7 +26,7 @@ function Footer() {
           </div>
         </div>
         
-        <div className='footer__contents'>
+        <div id='fc3' className='footer__contents'>
           <h4>Amazon Payment Products</h4>
           <div className='footer__accessibility'>
             <p>Amazon Business Card</p>
@@ -36,7 +36,7 @@ function Footer() {
           </div>
         </div>
         
-        <div className='footer__contents'>
+        <div id='fc4' className='footer__contents'>
           <h4>Let Us Help You</h4>
           <div className='footer__accessibility'>
             <p>Amazon and COVID-19</p>

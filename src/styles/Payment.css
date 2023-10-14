@@ -33,6 +33,7 @@
 
 .payment__address, .payment__items, .payment__details {
     flex: 0.8;
+    margin-left: 10px;
 }
 
 .payment__items {
@@ -65,4 +66,10 @@
 .payment__priceContainer > button:disabled {
     background: #f0c14b81;
     color: #11111186;
+}
+
+@media screen and (max-width: 480px) {
+    .payment__priceContainer {
+        width: 200px;
+    }
 }

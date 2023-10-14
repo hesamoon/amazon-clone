@@ -11,7 +11,8 @@ function Subtotal() {
   const navigate = useNavigate();
 
   const [disable, setDisable] = useState(true)
-  const [{basket}] = useStateValue();
+  const [login, setLogin] = useState(false)
+  const [{basket, user}] = useStateValue();
   let sum = 0;
 
   return (
@@ -33,7 +34,8 @@ function Subtotal() {
         thousandSeparator={true}
         prefix={'$'}
         />
-        <button disabled={disable} onClick={e => navigate('/payment')}>Proceed to Checkout</button>
+        <button disabled={disable} onClick={e => {user ? navigate('/payment') : setLogin(true)}}>Proceed to Checkout</button>
+        {login && <p className='notaion'>You should sign in</p>}
     </div>
   )
 }

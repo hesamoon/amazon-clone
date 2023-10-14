@@ -29,3 +29,17 @@
     color: rgba(255, 255, 255, 0.8);
     font-size: .7rem;
 }
+
+@media screen and (max-width: 480px) {
+    .footer__container {
+        flex-wrap: wrap;
+    }
+
+    .footer__contents {
+        margin-bottom: 2rem;
+    }
+
+    #fc2, #fc3 {
+        display: none;
+    }
+}

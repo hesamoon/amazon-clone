@@ -14,7 +14,7 @@ function Checkout() {
         {/* <img className='checkout__ad' src={cover} alt=''/> */}
         
         <div>
-          <h3>Hello, {user?.get('username')}</h3>
+          <h3>Hello, {user ? user.get('username') : 'Guest'}</h3>
           <h2 className='checkout__title'>
             Your shopping Basket
           </h2>
