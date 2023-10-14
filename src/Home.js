@@ -52,7 +52,7 @@ function Home() {
           price={1000}
           rating={5}
           image={cover}/>
-        </div>
+        </div>        
       </div>
     </div>
   )

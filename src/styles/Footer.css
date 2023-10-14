@@ -1,0 +1,31 @@
+.footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #131921;
+    color: rgba(255, 255, 255);
+    padding-bottom: 2rem;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 8rem;
+}
+
+.footer__accessibility > p {
+    font-size: .9rem;
+    margin-top: .7rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.footer__copyright > h5 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: .7rem;
+}

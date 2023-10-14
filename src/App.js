@@ -10,6 +10,7 @@ import Payment from './pages/Payment';
 import { loadStripe } from '@stripe/stripe-js'
 import { Elements } from '@stripe/react-stripe-js'
 import Parse from 'parse/dist/parse.min.js';
+import Footer from './Footer';
 
 // Parse initialization configuration
 const PARSE_APPLICATION_ID = '0H0kDF53J04Adf5XVi2jNYfRMYd9myemLQVwXB1q';
@@ -49,14 +50,15 @@ function App() {
       <div className="App">
       
         <Routes>
-          <Route path='/' element={<><Header/><Home/></>}/>
-          <Route path='/checkout' element={<><Header/><Checkout/></>}/>
+          <Route path='/' element={<><Header/><Home/><Footer/></>}/>
+          <Route path='/checkout' element={<><Header/><Checkout/><Footer/></>}/>
           <Route path='/payment' element={
           <>
             <Header/>
             <Elements stripe={promise}>
               <Payment/>
             </Elements>
+            <Footer/>
           </>}/>
           <Route path='/login' element={<Login/>}/>
           {/* <Route path='/register' element={<Register/>}/> */}
