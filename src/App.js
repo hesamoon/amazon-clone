@@ -2,7 +2,7 @@ import './styles/App.css';
 import Header from './Header';
 import Home from './Home';
 import Checkout from './pages/Checkout'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, HashRouter, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import { useEffect } from 'react';
 import { useStateValue } from './StateProvider';
@@ -45,7 +45,7 @@ function App() {
   }, [])
 
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
       
         <Routes>
@@ -63,7 +63,7 @@ function App() {
         </Routes>
         
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
